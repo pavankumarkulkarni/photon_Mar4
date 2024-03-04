@@ -35,7 +35,16 @@ function SchoolList({ setSchoolSelected }) {
       ) : list.length > 0 ? (
         <ul className={styles.schools}>
           {list.map((school) => {
-            return <li key={school?.dbn}>{school?.school_name}</li>;
+            return (
+              <li
+                key={school?.dbn}
+                onClick={() => {
+                  setSchoolSelected(school);
+                }}
+              >
+                {school?.school_name}
+              </li>
+            );
           })}
         </ul>
       ) : (

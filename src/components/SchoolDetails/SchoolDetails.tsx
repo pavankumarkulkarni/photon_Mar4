@@ -7,7 +7,7 @@ function SchoolDetails({ schoolSelected }) {
       {!schoolSelected ? (
         <p>Select school to view details</p>
       ) : (
-        <p>coming soon</p>
+        <p>{schoolSelected.overview_paragraph}</p>
       )}
     </section>
   );
