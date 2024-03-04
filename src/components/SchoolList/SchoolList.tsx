@@ -7,7 +7,7 @@ export type school = {
   overview_paragraph?: string;
 };
 
-function SchoolList({ setSchoolSelected }) {
+function SchoolList({ setSchoolSelected }: { setSchoolSelected: () => void }) {
   const [list, setList] = useState<school[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 

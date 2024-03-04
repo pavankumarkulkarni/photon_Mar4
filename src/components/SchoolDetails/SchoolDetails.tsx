@@ -3,7 +3,7 @@ import type { school } from '../SchoolList/SchoolList';
 import style from './SchoolDetails.module.css';
 
 type Props = {
-  schoolSelected: school;
+  schoolSelected: school | null;
 };
 function SchoolDetails(props: Props) {
   const { schoolSelected } = props;
